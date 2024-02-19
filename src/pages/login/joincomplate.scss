@@ -1,0 +1,76 @@
+.gnb{
+  text-align: right;
+  right: 76px;
+  position: absolute;
+  top:138px;
+  color: #262626;
+  font-size: 16px;
+  font-weight: 600;
+}
+.complatewrap{
+  /* width:1782px; */
+  /* margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 38px auto;
+  width:440px;
+  .notice{
+    color: #262626;
+    text-align: center;
+    font-family: "LG EI Text TTF";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26.667px; /* 83.333% */
+    p{
+      padding: 26px 0 50px 0;
+      color: #262626;
+      text-align: center;
+      font-family: "LG EI Text TTF";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26.667px; /* 133.333% */
+    }
+  }
+  &.formwrap{
+    padding:108px;
+    
+    h1{
+      color: #262626;
+      text-align: center;
+      font-family: "LG EI Text TTF";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26.667px; /* 83.333% */
+      border-bottom: none;
+      margin-bottom: 65px;
+    }
+    .forminner{
+      padding:0;
+      text-align: left;
+      border-radius: 8px;
+      width:440px;
+    }
+    .buttoninner{
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+      &::after{
+        content: '';
+      }
+    }
+    .buttoninner div{
+      padding-bottom: 20px;
+    }
+    .buttoninner button{
+      margin-right: 20px;
+    }
+    
+  }
+}

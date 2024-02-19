@@ -1,0 +1,581 @@
+
+.shadowbox{
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.06);
+  margin: 38px;
+  min-width: 1313px;
+}
+/*input*/
+.formwrap > div{
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left;
+  /* border-radius: 8px;
+  background: #FFF;
+  box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.06); */
+}
+.formwrap > div > h2{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.forminner input{
+  cursor: pointer;
+}
+.formwrap{
+  /* width:1782px; */
+  
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  // margin: 38px;
+}
+
+.formwrap h1{
+  color: #262626;
+  text-align: left;
+  font-family: "LG EI Text TTF";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.667px; /* 83.333% */
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+}
+.forminner label:first-of-type{
+  padding-top: 0;
+}
+.forminner label{
+  color: #4C4B48;
+  display: inline-block;
+  font-family: "LG EI Text TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 16px 0 8px 0;
+  line-height: 16px; /* 100% */
+}
+
+.forminner input{
+  border: 1px solid #D0CBC1;
+  background: #FFF;
+  padding:17px 20px;
+  width: 300px;
+}
+.forminner input:focus {outline:2px solid #4C4B48;}
+.forminner input::placeholder{
+  color: #D0CBC1;
+  font-family: "LG EI Text TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+}
+.forminner input.inputdisabled{
+  border: 1px solid #eaeaea;
+  cursor:default;
+  
+}
+.forminner input.inputdisabled::placeholder{
+  color: #eaeaea;
+}
+
+/*체크박스*/
+.checkedinner > div{
+  display: inline-flex;
+  align-items: center;
+}
+.checkedinner input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background: #fbfbfb;
+}
+.checkedinner label{
+  padding-right: 10px;
+  display: inline-block;
+}
+.checkedinner input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  width:20px;
+  height:20px;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+
+.checkedinner input[type="checkbox"]:checked {
+  background-color: #EB1918;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.checkedinner input[type="checkbox"]:checked::before {
+  width:10px;
+  height:4px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  left:3px;
+  top:7px;
+  transform: translateY(-50%) rotate(126deg);
+}
+/*라디오*/
+.radioinner div{
+  padding-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+.radioinner label {
+  font-size: 18px;
+  
+  display: inline-flex;
+  align-items: center;
+}
+
+.radioinner [type="radio"], span {
+  vertical-align: middle;
+}
+
+.radioinner [type="radio"] {
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  width: 20px;
+  height: 20px;
+  border: 3px solid white; 
+  box-shadow: 0 0 0 1.6px #ccc; 
+  border-radius: 50%;
+  outline: none; 
+  cursor: pointer;
+}
+
+.radioinner [type="radio"]:checked {
+  background-color: #EB1918; 
+  border: 3px solid white; 
+  box-shadow: 0 0 0 1.6px #EB1918; 
+}
+
+.radioinner [type="radio"]:hover + span {
+  cursor: pointer;
+}
+
+.radioinner [type="radio"]:disabled {
+  background-color: #fff;
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+  border: 3px solid white; 
+  box-shadow: 0 0 0 1.6px #eee; 
+}
+
+
+/*토글*/
+.toggleinner > div{
+  display: inline-flex;
+  align-items: center;
+}
+.toggleinner label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggleinner [type="checkbox"] {
+  appearance: none;
+  position: relative;
+  /* border: max(2px, 0.1em) solid gray; */
+  background-color: #D2CBC3;
+  border-radius: 18px;
+  height: 20px;
+  width:34px;
+}
+
+.toggleinner [type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  top:2px;
+  border-radius: 50%;
+  transform: scale(0.8);
+  background-color: #fff;
+  transition: left 250ms linear;
+}
+
+.toggleinner [type="checkbox"]:checked {
+  background-color: #EB1918;
+  border-color: #EB1918;
+  height: 20px;
+  width:34px;
+}
+
+.toggleinner [type="checkbox"]:checked::before {
+  background-color: white;
+  left: 17px;
+  top:2px
+}
+
+.toggleinner [type="checkbox"]:disabled {
+  background-color: #F5F5F5;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.toggleinner [type="checkbox"]:disabled:before {
+  background-color: #fff;
+}
+
+.toggleinner [type="checkbox"]:disabled + span {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background-color: #F5F5F5;
+}
+
+.toggleinner [type="checkbox"]:focus-visible {
+  outline-offset: max(2px, 0.1em);
+  outline: max(2px, 0.1em) solid tomato;
+}
+
+/* .toggleinner [type="checkbox"]:enabled:hover {
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+} */
+
+
+/*button*/
+.buttoninner div{
+  padding-bottom: 20px;
+}
+.buttoninner button{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.buttoninner .type_bg_red{
+  border: none;
+  border-radius: 8px;
+  background: #EA1917;
+  padding:17px 20px;
+  width: 340px;
+  color: #FFF;
+  text-align: center;
+  font-family: "LG EI Text TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+}
+.buttoninner .type_bg_gray{
+  border: none;
+  border-radius: 8px;
+  background: #4C4B48;
+  padding:17px 20px;
+  width: 340px;
+  color: #FFF;
+  text-align: center;
+  font-family: "LG EI Text TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+}
+.buttoninner .type_line{
+  border-radius: 8px;;
+  padding:17px 20px;
+  width: 340px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid #D0CBC1;
+  background: #FFF;
+}
+
+.buttoninner .type_r_bg{
+  border: none;
+  border-radius: 30px;
+  background: #EA1917;
+  padding:17px 20px;
+  width: 340px;
+  color: #FFF;
+  text-align: center;
+  font-family: "LG EI Text TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+}
+.buttoninner .type_r_bg.btndisabled{
+  background-color: #f1f1f1;
+  color: #cbcbcb;
+  cursor:default;
+}
+.buttoninner .type_r_line{
+  border-radius: 30px;
+  padding:17px 20px;
+  width: 340px;
+  text-align: center;
+  font-family: "LG EI Text TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  color: #000;
+  border: 1px solid #D0CBC1;
+  background: #FFF;
+}
+.nolinebtn{
+  border-radius: 8px;
+  padding:4px 33px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px; /* 175% */
+  color: #000;
+  border-radius: 8px;
+  border: none;
+  background: #FFF;
+  letter-spacing: -0.64px;
+}
+.linebtn{
+  border-radius: 8px;
+  padding:4px 33px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px; /* 175% */
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid #D0CBC1;
+  background: #FFF;
+  letter-spacing: -0.64px;
+}
+/*테이블*/
+.tableinner{
+  .table_type01{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    // border-bottom: 1px solid #a0a0a0;
+    th{
+      border-left: none;
+      padding: 6px 15px;
+      &:first-child{
+        // border-left: 1px solid #a0a0a0;
+      }
+    }
+    td {
+      padding: 6px 15px;
+      
+    }
+    tr{
+      &:hover{background-color: #fddfdf !important;}
+      &:nth-child(even) {
+        background: #f0ebe5;
+      }
+    }
+  }
+  
+}
+
+
+.tableinner .register_btn{
+  width:28px;
+  height:28px;
+  background-color: #ffcc33;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.tableinner .register_btn:after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left:7px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  transform: translateY(-50%) rotate(-315deg);
+}
+
+.pagination > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination div .totalpagenum::before{
+  content: '/';
+}
+.pagination button{
+  padding: 20px;
+  width:10px;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  margin: 0;
+  border: none;
+  background: none;
+}
+.pagination button:first-child:after{
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #999;
+  border-right: solid 2px #999;
+  transform: translateY(-50%) rotate(225deg);
+}
+.pagination button:last-child:after{
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #999;
+  border-right: solid 2px #999;
+  transform: translateY(-50%) rotate(-315deg);
+}
+/*모달팝업*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal button {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+.modal > section {
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-show 0.3s;
+  overflow: hidden;
+}
+.modal > section > header {
+  position: relative;
+  padding: 16px 64px 16px 16px;
+  background-color: #f1f1f1;
+  font-weight: 700;
+}
+.modal > section > header button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #999;
+  background-color: transparent;
+}
+.modal > section > main {
+  padding: 16px;
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+}
+.modal > section > footer {
+  padding: 12px 16px;
+  text-align: right;
+}
+.modal > section > footer button {
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #6c757d;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.modal.openModal {
+  display: flex;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show 0.3s;
+}
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*모달창*/
+.closebtn {
+  border: none;
+  position:absolute;
+  background-color: transparent;
+  padding-right:15px;
+  width: 18px;
+  height: 18px;
+  right:25px;
+  top:16px;
+} 
+.closebtn:before, .closebtn:after {
+  position: absolute; 
+  right:7px; 
+  top:6px; 
+  content:''; 
+  height: 18px; 
+  width:2px; 
+  background-color: #4c4b48;
+} 
+.closebtn:before {transform: rotate(45deg);} 
+.closebtn:after {transform: rotate(-45deg);}
+.conformbtnwrap{
+  background-color: #F0ECE4;
+  width: 100%;
+  height: 64px;
+  border-radius: 0 0 16px 16px;
+  position: relative;
+  
+}
+.noticetit{
+  position: absolute;
+  color: #4C4B48;
+  font-family: "LG EI Text TTF";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  left:25px;
+  top:16px;
+}
+

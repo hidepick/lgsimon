@@ -1,0 +1,61 @@
+.footer{
+  padding: 8px 100px 103px 100px;
+  .footerterm{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+    > div{
+      position: relative;
+      &::after{
+        content: '';
+        width:1px;
+        height: 16px;
+        display: inline-block;
+        position: absolute;
+        top:0;
+        right:0;
+        background-color: #D0CBC1;
+      }
+      &:last-child{
+        &::after{
+          content: '';
+          background-color: transparent;
+        }
+       
+      }
+      
+      a{
+        padding: 0 21px;
+        color:#4C4B48;
+        text-decoration: none;
+      }
+    }
+  }
+  .companyinfo{
+    width:500px;
+    padding:23px 0 16px 24px;
+    color: #4C4B48;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px; /* 125% */
+    span{
+      padding-right: 24px;
+    }
+  }
+  .copyinfo{
+    padding:0  0 16px 24px;
+    color: #4C4B48;
+    font-size: 16px;
+    line-height: 20px; /* 125% */
+    span{
+      padding-right: 24px;
+    }
+    p{
+      color: #4C4B48;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+}

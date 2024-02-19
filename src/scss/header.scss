@@ -1,0 +1,194 @@
+
+
+.gnbwrap{
+  /* width:1653px; */
+  padding:0 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding:0 70px;
+  .logowrap{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+    line-height: 60px; /* 375% */
+    .countrytime{
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      height: 60px;
+      line-height: 65px;
+      padding-left: 62px;
+      &::after{
+        content: '/';
+        padding: 0 10px;
+      }
+    }
+    .time{
+      height: 60px;
+      line-height: 62px;
+    }
+  }
+  .userinfo{
+    display: flex;
+    align-items: center;
+    .headersearchwrap{
+      position: relative;
+      padding:0 20px;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 16px;
+        top:4px;
+        left:0;
+        background-color:#c5cebc;
+      }
+    }
+    .headersearchbtn{
+      position: relative;
+      border: none;
+      background-color: transparent;
+      width:28px;
+      height: 28px;
+      &::after{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+        border: 2px solid #515151;
+        background-color: #F0EBE5;
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top:25px;
+        left:10px;
+        border-top: 2px solid #515151;
+        // border-right: solid 2px #515151;
+        transform: translateY(-50%) rotate(-320deg);
+      }
+    }
+    .headernotiwrap{
+      position: relative;
+      padding:0 20px;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 16px;
+        top:4px;
+        left:0;
+        background-color:#c5cebc;
+      }
+      span{
+        position: absolute;
+        right:18px;
+        top:2px;
+        display: inline-block;
+        width:14px;
+        height: 14px;
+        line-height: 16px;
+        text-align: center;
+        border-radius: 100px;
+        font-weight:600;
+        background-color: #EB1918;
+        color:#fff;
+        font-size: 12px;
+      }
+      .headernotibtn{
+        background: url('../assets/noti_icon_08.png') no-repeat;
+        background-size: cover; 
+        width:28px;
+        height:28px;
+        position: relative;
+        border: none;
+        
+      }
+    }
+    .countryselect{
+      width: 80px;
+      height:30px;
+      line-height: 30px;
+      display: flex;
+      cursor: pointer;
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 16px;
+        top:4px;
+        left:0;
+        background-color:#c5cebc;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 16px;
+        top:4px;
+        right:0;
+        background-color:#c5cebc;
+      }
+      .countryvalue{
+        width: 50px;
+        padding:0 20px;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          right:20px;
+          top:10px;
+          background-color: #F0EBE5;
+          border-top: solid 2px #9b9b9b;
+          border-right: solid 2px #9b9b9b;
+          transform: translateY(-50%) rotate(-225deg);
+        }
+      }
+    }
+    .username{
+      color: #262626;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 60px; /* 375% */
+      padding-left: 20px;
+    }
+    .usertype{
+      font-size: 16px;
+      font-weight: 400;
+      padding: 0 10px;
+    }
+  }
+}
+.logo{
+  background: url('../assets/bi.png') no-repeat;
+  background-size: cover; 
+  width:148px;
+  height:36px;
+}
+.menuwrap{
+  height: 45.333px;
+  padding: 9.333px 348px 9.333px 345.333px;
+  background: #4C4B47;
+  > div {
+    > ul{
+      min-width:730px;
+      display: flex;
+      align-items: center;
+      gap: 53.333px;
+      flex-shrink: 0;
+      color:#fff;
+      height: 45.333px;
+    }
+  }
+}
