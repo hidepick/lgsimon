@@ -19,7 +19,8 @@ import '../src/scss/main.scss'
 
 function App() {
   if (window.location.pathname === '/guide') 
-  return <BrowserRouter>
+  return 
+  <BrowserRouter>
   <Routes>
     <Route path='/guide' element={<Form />}/>
   </Routes>
