@@ -33,7 +33,7 @@ function App() {
   return (
     <React.Fragment>
       <Reset />
-      <BrowserRouter basename={"https://hidepick.github.io/lgsimon/"} >
+      <BrowserRouter basename={process.env.PUBLIC_URL} >
         <Routes>
           <Route path='/guide' element={<Form />}/>
         </Routes>
